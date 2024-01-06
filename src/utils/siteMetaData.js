@@ -3,7 +3,7 @@ const siteMetadata = {
     title: 'Altcoinvoyage.comr',
     author: 'AltcoinVoyage.com',
   headerTitle: 'this.altcoinvoyage.com',
-    description: 'Your best guid on vrypro world',
+    description: 'Your best guid on web3 world',
     language: 'en-us',
     theme: 'system', // system, dark or light
     siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
