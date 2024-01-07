@@ -8,7 +8,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className= "mt-16 justify-between px-24 py-4 pb-8  bg-dark  dark:bg-slate-900  flex flex-col items-center text-light">
-      <div className="border-b flex w-full justify-between pb-4">
+      <div className="border-b flex flex-col md:flex-row min-w-full justify-between pb-4">
         <div className="flex space-x-12 items-center">
           <Image
             src={Logo}
@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="text-xl "> Your guide on crypto voyage </p>
           </div>
         </div>
-        <rightfooter className="flex space-x-20">
+        <rightfooter className="flex flex-col md:flex-row md:space-x-20">
           <div className="relative space-y-6 justify-center font-bold flex-col flex">
             <span>
               <Link href="/">Home</Link>
