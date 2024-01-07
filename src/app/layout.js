@@ -5,6 +5,8 @@ import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,6 +65,17 @@ export default function RootLayout({ children }) {
           "font-mr bg-light dark:bg-dark"
         )}
       >
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7V291HMZJB" />
+        <Script id="google-analytics">
+          { `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+           gtag('config', 'G-7V291HMZJB');
+        `}
+        </Script>
+        
         <Script id="theme-switcher" strategy="beforeInteractive">
           {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
@@ -70,8 +83,10 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
+        
         <Header />
         <div className="py-16" />
+        <GoogleTagManager gtmId="GTM-5QQMB4JT" />
         {children}
         <Footer />
       </body>
