@@ -91,27 +91,27 @@ const Header = () => {
               <p className="text-xs">your guide on crypro world</p>
             </header>
           </div>
-          <div className=" space-x-6 mr-8 flex">
-            <span>
+          <div className=" space-x-6  mr-8 flex">
+            <span className="hover:scale-110 duration-500">
               <Link href="/">Home</Link>
             </span>
-            <span>
+            <span className="hover:scale-110 duration-500">
               <Link href="/categories/all">Categories</Link>
             </span>
-            <span>
+            <span className="hover:scale-110 duration-500">
               <Link href="/news">Latest News</Link>
             </span>
-            <span>
+            <span className="hover:scale-110 duration-500">
               <Link href="/about">About Us</Link>{" "}
             </span>
-            <span>
+            <span className="hover:scale-110 duration-500">
               {" "}
               <Link href="/privacypolicy">Privacy Policy</Link>{" "}
             </span>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={cx(
-                "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
+                "w-6 h-6 ease ml-2 hover:scale-110 duration-500 flex items-center justify-center rounded-full p-1",
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               )}
               aria-label="theme-switcher">
@@ -125,9 +125,9 @@ const Header = () => {
 
           <div className="flex flex-row text-blue-500 text-2xl items-center space-x-4  ">
             <div
-              className="bg-third text-lg text-third rounded-2xl px-3 py-1"
+              className="bg-dark dark:bg-light font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-light dark:text-dark rounded-2xl px-5 py-2"
               aria-label="Toggle Menu">
-              <Link href="/contactUs">Contact Us</Link>
+              <Link href="/contact">Contact</Link>
             </div>
             <a
               href="https://twitter.com/AltcoinVoyage"
