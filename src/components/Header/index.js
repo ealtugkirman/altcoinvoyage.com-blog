@@ -130,7 +130,7 @@ const Header = () => {
               <Link href="/contactUs">Contact Us</Link>
             </div>
             <a
-              href="https://twitter.com/the_cognizer"
+              href="https://twitter.com/AltcoinVoyage"
               aria-label="Twitter Link"
               className="dark:text-white text-dark">
               <FaXTwitter />
@@ -145,24 +145,24 @@ const Header = () => {
             <Link href="/">
               <Image src={Logo} width={70} height={70} alt="cognitive.com" />
             </Link>
-            <div className="flex flex-col items-center ml-4" >
-              <span className="text-sm" >altcoinvoyage.com</span>
-              <span className="text-xs" >your guide on crypto world</span>
-         </div>
+            <div className="flex flex-col items-center ml-4">
+              <span className="text-sm">altcoinvoyage.com</span>
+              <span className="text-xs">your guide on crypto world</span>
+            </div>
           </div>
           <div className="lg:hidden flex items-center  space-x-6">
             <button
-              onClick={ () => setMode(mode === "light" ? "dark" : "light") }
-              className={ cx(
+              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              className={cx(
                 "w-7 h-7 ease  mt-1 flex items-center justify-center rounded-full p-1",
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-              ) }
+              )}
               aria-label="theme-switcher">
-              { mode === "light" ? (
-                <MoonIcon className={ "fill-dark" } />
+              {mode === "light" ? (
+                <MoonIcon className={"fill-dark"} />
               ) : (
-                <SunIcon className={ "fill-dark" } />
-              ) }
+                <SunIcon className={"fill-dark"} />
+              )}
             </button>
             <button
               id="menu-btn"
@@ -200,15 +200,16 @@ const Header = () => {
             </span>
           </div>
           <p className="dark:text-light  text-black text-left text-sm mx-8 pt-10">
-            The Cognizer is a publishing platform initiated by CogIST, a
-            cognitive science community from Turkey. On this platform, articles
-            and essays on different topics from different fields of cognitive
-            science are published in a way that would bridge the gap between
-            public audience and experts.
+            Welcome to AltcoinVoyage, your timeless portal to the realm of
+            alternative cryptocurrencies. Dive into a sea of market wisdom,
+            trend analyses, and enriching educational resources. Chart your
+            course through the crypto landscape with us, where timeless elegance
+            meets modern insights. Join the voyage at #AltcoinVoyage and
+            navigate the crypto waves with confidence.
           </p>
           <div className="flex text-dark dark:text-light text-2xl flex-row space-x-6 pt-6 justify-center">
             <a
-              href="https://twitter.com/the_cognizer"
+              href="https://twitter.com/AltcoinVoyage"
               aria-label="Twitter Link">
               <FaXTwitter />
             </a>
