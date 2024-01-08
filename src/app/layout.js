@@ -64,18 +64,7 @@ export default function RootLayout({ children }) {
           manrope.variable,
           "font-mr bg-light dark:bg-dark"
         )}
-      >
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7V291HMZJB" />
-        <Script id="google-analytics">
-          { `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-           gtag('config', 'G-7V291HMZJB');
-        `}
-        </Script>
-        
+      >  
         <Script id="theme-switcher" strategy="beforeInteractive">
           {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
