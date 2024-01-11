@@ -98,9 +98,9 @@ const Header = () => {
             <span className="hover:scale-110 duration-500">
               <Link href="/categories/all">Categories</Link>
             </span>
-            <span className="hover:scale-110 duration-500">
+            {/* <span className="hover:scale-110 duration-500">
               <Link href="/latestnews">Latest News</Link>
-            </span>
+            </span> */}
             <span className="hover:scale-110 duration-500">
               <Link href="/about">About Us</Link>{" "}
             </span>
@@ -189,9 +189,9 @@ const Header = () => {
             <span>
               <Link href="/categories/all">Categories</Link>
             </span>
-            <span>
-              <Link href="/news">Latest News</Link>
-            </span>
+            {/* <span>
+              <Link href="/latestnews">Latest News</Link>
+            </span> */}
             <span>
               <Link href="/about">About Us</Link>{" "}
             </span>
