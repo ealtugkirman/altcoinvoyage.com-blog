@@ -99,7 +99,7 @@ const Header = () => {
               <Link href="/categories/all">Categories</Link>
             </span>
             <span className="hover:scale-110 duration-500">
-              <Link href="/news">Latest News</Link>
+              <Link href="/latestnews">Latest News</Link>
             </span>
             <span className="hover:scale-110 duration-500">
               <Link href="/about">About Us</Link>{" "}
