@@ -4,7 +4,7 @@ const siteMetadata = {
   author: "AltcoinVoyage.com",
   headerTitle: "this.altcoinvoyage.com",
   description:
-    "Welcome to AltcoinVoyage, your timeless portal to the realm of alternative cryptocurrencies. Dive into a sea of market wisdom, trend analyses, and enriching educational resources. Chart your course through the crypto landscape with us, where timeless elegance meets modern insights. Join the voyage at #AltcoinVoyage and navigate the crypto waves with confidence.",
+    "Welcome to AltcoinVoyage, your timeless portal to the realm of alternative cryptocurrencies",
   language: "en-us",
   theme: "dark", // system, dark or light
   siteUrl: "https://altcoinvoyage.com/", // your website URL
