@@ -31,9 +31,9 @@ const Footer = () => {
             <span>
               <Link href="/categories/all">Categories</Link>
             </span>
-            <span>
+            {/* <span>
               <Link href="/news">Latest News</Link>
-            </span>
+            </span> */}
           </div>
           <div className="relative space-y-6 justify-center font-bold flex-col flex">
             <span>
