@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cx } from "@/src/utils";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import { SunIcon, MoonIcon } from "../Icons";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import Logo from "../../../public/newLogo.png";
@@ -124,17 +125,24 @@ const Header = () => {
           </div>
 
           <div className="flex flex-row text-blue-500 text-2xl items-center space-x-4  ">
+            <a
+              href="https://twitter.com/altcoin_voyage"
+              aria-label="Twitter Link"
+              className="dark:text-white text-dark">
+              <FaXTwitter />
+            </a>
+            <a
+              href="https://www.instagram.com/altcoin_voyage/"
+              aria-label="Twitter Link"
+              className="dark:text-white text-dark">
+              <FaInstagram />
+            </a>
             <div
               className="bg-newcolor dark:bg-light font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-light dark:text-dark rounded-2xl px-5 py-2"
               aria-label="Toggle Menu">
               <Link href="/contact">Contact</Link>
             </div>
-            <a
-              href="https://twitter.com/AltcoinVoyage"
-              aria-label="Twitter Link"
-              className="dark:text-white text-dark">
-              <FaXTwitter />
-            </a>
+          
           </div>
         </div>
       </div>
