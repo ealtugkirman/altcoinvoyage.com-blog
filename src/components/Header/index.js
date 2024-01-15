@@ -7,7 +7,7 @@ import { cx } from "@/src/utils";
 import { FaXTwitter } from "react-icons/fa6";
 import { SunIcon, MoonIcon } from "../Icons";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/newLogo.png";
 
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
@@ -81,15 +81,15 @@ const Header = () => {
             <Link className="" href="/">
               <Image
                 src={Logo}
-                width={80}
+                width={200}
                 height={80}
                 alt="altcoinvoyage.com"
               />
             </Link>
-            <header className="flex flex-col items-center">
+            {/* <header className="flex flex-col items-center">
               <p>Altcoin Voyage</p>
               <p className="text-xs">your guide on crypro world</p>
-            </header>
+            </header> */}
           </div>
           <div className=" space-x-6  mr-8 flex">
             <span className="hover:scale-110 duration-500">
@@ -125,7 +125,7 @@ const Header = () => {
 
           <div className="flex flex-row text-blue-500 text-2xl items-center space-x-4  ">
             <div
-              className="bg-dark dark:bg-light font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-light dark:text-dark rounded-2xl px-5 py-2"
+              className="bg-newcolor dark:bg-light font-semibold animation-pulse hover:scale-110 duration-500 text-lg text-light dark:text-dark rounded-2xl px-5 py-2"
               aria-label="Toggle Menu">
               <Link href="/contact">Contact</Link>
             </div>

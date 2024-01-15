@@ -21,7 +21,7 @@ const AboutCoverSection = () => {
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col text-left items-start justify-center px-5 xs:p-10 pb-10 lg:px-16">
-        <h2 className="font-bold capitalize text-xl xs:text-2xl sxl:text-4xl  text-center lg:text-left">
+        <h2 className="font-bold capitalize text-newcolor dark:text-light mb-4 text-xl xs:text-2xl sxl:text-4xl  text-center lg:text-left">
           Welcome to AltcoinVoyage.com   </h2>
           <h3 className="font-semibold italic text-md xs:text-lg sxl:text-2xl text-base">
             where innovation meets insight in the dynamic world of alternative

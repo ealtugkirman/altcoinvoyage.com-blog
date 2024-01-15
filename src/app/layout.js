@@ -1,6 +1,6 @@
 import "./globals.css";
 import { cx } from "@/src/utils";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Manrope, Work_Sans } from "next/font/google";
 import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
@@ -14,7 +14,7 @@ const inter = Inter({
   variable: "--font-in",
 });
 
-const manrope = Manrope({
+const worksans = Work_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mr",
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
       <body
         className={cx(
           inter.variable,
-          manrope.variable,
+          worksans.variable,
           "font-mr bg-light dark:bg-dark"
         )}
       >  
