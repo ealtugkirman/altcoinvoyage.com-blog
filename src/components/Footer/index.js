@@ -4,38 +4,45 @@ import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
 import Logo from "../../../public/newLogo.png";
 import Image from "next/image";
-
+import voyage from "../../../public/altcoınvoyage.gif"
+  
 const Footer = () => {
   return (
-    <footer className= "mt-16 justify-between font-mr px-24 py-4 pb-8  bg-dark   flex flex-col items-center text-light">
-      <div className="border-b flex flex-col md:flex-row min-w-full justify-between pb-4">
-        <div className="flex space-x-12 items-center">
+    <footer className= "mt-16 justify-between font-mr px-6 md:px-24 py-4 pb-8  bg-dark   flex flex-col items-center text-light">
+      <div className="border-b flex flex-row min-w-full justify-between pb-4">
+        <div className="flex md:space-x-12 space-x-4 items-center">
           <Image
             src={Logo}
             alt="altcoinvyage.com logo"
             sizes="10vw"
-            width={300}
-            height={300}
+            width={240}
+            height={240}
             priority
           />
-          {/* <div className="flex flex-col">
-            <h1 className="text-2xl"> AltCoinVoyage.com </h1>
-            <p className="text-xl "> Your guide on crypto voyage </p>
-          </div> */}
         </div>
-        <rightfooter className="flex flex-col md:flex-row md:space-x-20">
-          <div className="relative space-y-6 justify-center font-bold flex-col flex">
+        <div className="hidden md:flex" >
+          <Image
+            src={ voyage }
+            alt="altcoinvyage.com logo"
+            sizes="10vw"
+            width={ 240 }
+            height={ 240 }
+            priority
+          />
+      </div>
+        <rightfooter className="flex text-sm md:text-lg flex-row space-x-6 md:space-x-20">
+          <div className="relative space-y-4 justify-center    flex-col flex">
             <span>
               <Link href="/">Home</Link>
             </span>
             <span>
               <Link href="/categories/all">Categories</Link>
             </span>
-            {/* <span>
-              <Link href="/news">Latest News</Link>
-            </span> */}
+            <span>
+              <Link href="/categories/all">Latest News</Link>
+            </span>
           </div>
-          <div className="relative space-y-6 justify-center font-bold flex-col flex">
+          <div className="relative space-y-4 justify-center  flex-col flex">
             <span>
               <Link href="/about">About Us</Link>{" "}
             </span>

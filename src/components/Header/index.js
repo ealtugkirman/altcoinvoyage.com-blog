@@ -151,12 +151,9 @@ const Header = () => {
         <div className="flex z-50 fixed justify-between px-8 bg-light dark:bg-dark items-center min-w-full  lg:hidden pt-20 ">
           <div className="mt-2 flex py-2 items-center text-dark dark:text-light ">
             <Link href="/">
-              <Image src={Logo} width={70} height={70} alt="cognitive.com" />
+              <Image src={Logo} width={140} height={70} alt="cognitive.com" />
             </Link>
-            <div className="flex flex-col items-center ml-4">
-              <span className="text-sm">altcoinvoyage.com</span>
-              <span className="text-xs">your guide on crypto world</span>
-            </div>
+        
           </div>
           <div className="lg:hidden flex items-center  space-x-6">
             <button
@@ -188,7 +185,7 @@ const Header = () => {
         <div
           id="menu"
           ref={menuRef}
-          className="fixed font-myfont dark:bg-dark  bg-white z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl dark:text-light text-dark">
+          className="fixed font-myfont dark:bg-dark  bg-light z-30 top-0 bottom-0 left-0 flex-col text-center hidden lg:hidden w-2/3 min-h-screen py-1 pt-40 space-y-4 text-xl dark:text-light text-dark">
           <div className="absolute" />
           <div className="relative space-y-6 justify-center mx-auto flex-col flex">
             <span>
@@ -207,19 +204,22 @@ const Header = () => {
               <Link href="/privacypolicy">Privacy Policy</Link>{" "}
             </span>
           </div>
-          <p className="dark:text-light  text-black text-left text-sm mx-8 pt-10">
-            Welcome to AltcoinVoyage, your timeless portal to the realm of
-            alternative cryptocurrencies. Dive into a sea of market wisdom,
-            trend analyses, and enriching educational resources. Chart your
-            course through the crypto landscape with us, where timeless elegance
-            meets modern insights. Join the voyage at #AltcoinVoyage and
-            navigate the crypto waves with confidence.
+          <p className="dark:text-light leading-6 text-black text-left text-sm mx-8 pt-10">
+            Your best friend on this voyage <br/>
+            Here is the best finance & crypto blog. <br />
+            Say hello to us and start to explore :)
           </p>
           <div className="flex text-dark dark:text-light text-2xl flex-row space-x-6 pt-6 justify-center">
             <a
               href="https://twitter.com/AltcoinVoyage"
               aria-label="Twitter Link">
               <FaXTwitter />
+            </a>
+            <a
+              href="https://www.instagram.com/altcoin_voyage/"
+              aria-label="Twitter Link"
+              className="dark:text-white text-dark">
+              <FaInstagram />
             </a>
           </div>
         </div>

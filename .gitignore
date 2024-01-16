@@ -40,3 +40,17 @@ next-env.d.ts
 /public/sitemap.xml
 /public/sitemap-0.xml
 
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
