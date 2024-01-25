@@ -72,6 +72,9 @@ export default function RootLayout({ children }) {
     document.documentElement.classList.remove('dark')
   }`}
         </Script>
+
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8265654758847402"
+          crossorigin="anonymous"></Script>
         
         <Header />
         <div className="py-16" />
