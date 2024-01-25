@@ -3,6 +3,9 @@ const siteMetadata = {
   title: "Altcoinvoyage.com",
   author: "AltcoinVoyage.com",
   headerTitle: "this.altcoinvoyage.com",
+  name: "google-adsense-account",
+  content: "ca-pub-8265654758847402",
+
   description:
     "Welcome to AltcoinVoyage, your timeless portal to the realm of alternative cryptocurrencies",
   language: "en-us",
