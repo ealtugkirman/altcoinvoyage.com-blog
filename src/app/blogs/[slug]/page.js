@@ -1,6 +1,7 @@
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
+import FeaturedPosts from "@/src/components/Home/FeaturedPosts";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { allBlogs } from "contentlayer/generated";
 import { slug } from "github-slugger";
@@ -193,6 +194,7 @@ export default function BlogPage({ params }) {
             </details>
           </div>
         </div>
+        <FeaturedPosts blogs={ allBlogs } />
       </article>
     </>
   );
